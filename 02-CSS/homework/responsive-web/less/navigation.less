@@ -1,0 +1,58 @@
+// Código de Nav acá
+#navBar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: @nav-bg;
+    opacity: 0.96;
+    font-family: @nav-font;
+    border-bottom: @nav-border;
+    margin-bottom: 8px;
+    position: fixed;
+    z-index: 100;
+    h1{
+        font-size: 35px;
+        align-self: center;
+        padding: 25px 20px 20px 20px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        align-self: center;
+        margin: 0 0 10px 0;
+        li{
+            
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                color: rgb(52, 52, 52);
+                margin: 5px 10px 5px 10px;
+
+                &:hover{
+                    border-radius: 4px;
+                    padding: 5px;
+                    font-size: 21px;
+                    transition: 0.2s;
+                    background-color: rgb(192, 192, 192);
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:500px) {
+    #navBar{
+        h1{
+            font-size: 30px;
+        }
+        ul{
+            li{
+                a{
+                    margin: 5px 7px 5px 7px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}

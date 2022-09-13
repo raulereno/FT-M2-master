@@ -1,0 +1,32 @@
+.card{
+    border: 1px solid rgb(164, 164, 164);
+    width: 16rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgb(159, 159, 159) 7px 7px 10px 0px;
+    p{
+        font-size: 2rem;
+    }
+
+    button {
+        width: 15%;
+        align-self: flex-end;
+        margin: 0.2em 0.2em 0 0;
+    }
+    
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        span{
+            font-size: 1.5rem;
+            width: 3em;
+        }
+        img{
+            width: fit-content;
+            background-color: rgb(0, 0, 0);
+            border-radius: 100%;
+        }   
+    } 
+}
